@@ -1,0 +1,232 @@
+
+
+.headImg {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	background-color: #FFE97F
+}
+
+p {
+	margin: 15px;	
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: black;
+}
+
+#sidebar {
+	margin: 0 auto;
+	padding: 50px 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	color: red; 
+	font-size: 16px;
+	border-radius: 20px;
+	border: 2px solid green;
+	text-align: center;
+	background-image: url("../img/chess.png");
+	background-size: 200px 200px;
+	
+	
+}
+
+.colorful {
+	animation-name: colorchange;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+h1 {
+	text-align: center;
+	font-style: italic;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes colorchange {
+	0%   {color: red;}
+	25%  {color: green;}
+	50%  {color: cyan;}
+	75%  {color: yellow;}
+	100% {color: red;}
+}
+
+.regButton {
+	margin: auto;
+	outline-style: outset;
+	outline-width: 3px;
+	outline-color: #70f0ff;
+	margin-top: 10px;
+	width: 160px;
+	height: 40px;
+	
+}
+.regButton:hover {
+	outline-style: inset;
+	outline-width: 3px;
+	outline-color: #70f0ff;
+}
+
+@keyframes moveImage {
+	from {
+		left: 0em;
+		top: 40em;
+	}
+	to {
+		left: 100em;
+		top: 0em;
+	}
+	0% {opacity: 0;}
+	10% {opacity: 0.8;}
+	90% {opacity: 0.8;}
+	100% {opacity: 0;}
+			
+}
+
+@keyframes moveImage2 {		
+	from {
+		left: -80em;
+		top: 40em;
+	}
+	to {
+		left: 80em;
+		top: 40em;
+	}
+	0% {opacity: 0;}
+	10% {opacity: 0.8;}
+	90% {opacity: 0.8;}
+	100% {opacity: 0;}
+			
+}
+
+@keyframes moveImage3 {		
+	from {
+		left: 60em;
+		top: -20em;
+	}
+	to {
+		left: -20em;
+		top: 50em;
+	}
+	0% {opacity: 0;}
+	10% {opacity: 0.8;}
+	90% {opacity: 0.8;}
+	100% {opacity: 0;}
+			
+}
+
+@keyframes moveImage4 {		
+	from {
+		left: -20em;
+		top: 30em;
+	}
+	to {
+		left: 80em;
+		top: 30em;
+	}
+	0% {opacity: 0;}
+	10% {opacity: 0.8;}
+	90% {opacity: 0.8;}
+	100% {opacity: 0;}
+			
+}
+
+#lounge1 {
+	max-width: 50%;
+	z-index: -1;
+	position: fixed;
+	animation-name: moveImage;
+	animation-timing-function: linear;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+#lounge2 {
+	max-width: 50%;
+	z-index: -1;
+	position: fixed;
+	animation-name: moveImage2;
+	animation-timing-function: linear;
+	
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+#golf {
+	max-width: 75%;
+	z-index: -1;
+	position: fixed;
+	animation-name: moveImage3;
+	animation-timing-function: linear;
+	
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+#chair {
+	max-width: 75%;
+	z-index: -1;
+	position: fixed;
+	animation-name: moveImage4;
+	animation-timing-function: linear;
+	
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+
+
+input, select {
+	padding: 5px;
+	margin-top: 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.formBtn {
+	padding: 10px;
+}
+
+.formBtn:hover {
+	background-color: grey;
+}
+
+input:hover {
+	border: 1px solid blue;
+}
+
+input:focus {
+	border: 2px solid blue;
+}
+
+input.error {
+	border: 2px solid red;
+}
+
+.errors {
+	color: red;
+	font-size: 10px;
+	font-style: italic;
+}
+
+#radGender {
+	float: left;
+}
+
+#radMarital {
+	float: left;
+}
+
+#foot {
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+#foot img {
+	height: 120px;
+	width: 250px;
+}
